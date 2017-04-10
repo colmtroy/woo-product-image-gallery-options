@@ -1,0 +1,26 @@
+# Editors
+project.xml
+project.properties
+/nbproject/private/
+.buildpath
+.project
+.settings*
+.idea
+
+# Grunt/Gulp
+/node_modules/
+
+# Sass
+.sass-cache/
+
+# OS X metadata
+.DS_Store
+
+# Windows junk
+Thumbs.db
+
+# Logs
+/logs
+
+# Composer
+/vendor/

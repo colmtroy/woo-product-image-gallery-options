@@ -1,0 +1,4 @@
+*** WooCommerce Product Image Gallery Options - Changelog ***
+
+2017.04.10 - version 1.0.0
+* Initial release
