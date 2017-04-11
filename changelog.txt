@@ -2,3 +2,6 @@
 
 2017.04.10 - version 1.0.0
 * Initial release
+
+2017.04.11 - version 1.0.1
+* Fixed some basic errors for admin notices when WooCommerce is not active

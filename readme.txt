@@ -34,6 +34,9 @@ This plugin will only work with WooCommerce 3.0+
 = 1.0.0 - 04.10.2017 =
 Initial release.
 
+= 1.0.1 - 04.11.2017 =
+Fixed some basic errors for admin notices when WooCommerce is not active
+
 
 == Upgrade Notice ==
 
