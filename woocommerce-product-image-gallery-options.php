@@ -50,8 +50,15 @@ if ( ! class_exists( 'WooCommerce_Product_Image_Gallery_Options' ) ) {
 		 */
 		const VERSION = '1.0.0';
 
+		/**
+		 * Notices (array)
+		 * @var array
+		 */
+		public $notices = array();
+
 		public function __construct() {
 			add_action( 'admin_init', array( $this, 'check_environment' ) );
+			add_action( 'admin_notices', array( $this, 'admin_notices' ), 15 );
 			add_action( 'plugins_loaded', array( $this, 'init' ) );
 			add_action( 'init', array( $this, 'load_plugin_textdomain' ) );
 		}
@@ -109,6 +116,27 @@ if ( ! class_exists( 'WooCommerce_Product_Image_Gallery_Options' ) ) {
 			}
 
 			return false;
+		}
+
+		/**
+		 * Display any notices we've collected thus far
+		 */
+		public function admin_notices() {
+			foreach ( (array) $this->notices as $notice_key => $notice ) {
+				echo "<div class='" . esc_attr( $notice['class'] ) . "'><p>";
+				echo wp_kses( $notice['message'], array( 'a' => array( 'href' => array() ) ) );
+				echo "</p></div>";
+			}
+		}
+
+		/**
+		 * Allow this class and other classes to add slug keyed notices (to avoid duplication)
+		 */
+		public function add_admin_notice( $slug, $class, $message ) {
+			$this->notices[ $slug ] = array(
+				'class'   => $class,
+				'message' => $message
+			);
 		}
 
 		/**
