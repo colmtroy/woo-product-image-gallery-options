@@ -3,15 +3,15 @@ Contributors: createandcode
 Tags: woocommerce, gallery
 Requires at least: 4.7
 Tested up to: 4.7.3
-Stable tag: 1.0.0
+Stable tag: trunk
 License: GPLv2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 
-Add attractive social sharing icons for Facebook, Twitter, Pinterest and Email to your product pages.
+Switch on/off WooCommerce 3.0+ Product Image Gallery options on a per product basis.
 
 == Description ==
 
-Switch on/off WooCommerce 3.0+ Product Image Gallery options on a per product basis.
+Switch on/off WooCommerce 3.0+ Product Image Gallery options on a per product basis. WooCommerce 3.0+ added a series of new (awesome!) product image gallery options. But right now, these options are activated for all products. This plugin lets you show/hide the new WooCommerce Product Image Gallery options on individual products by adding 3 new check boxes to your Edit Product screen.
 
 == Installation ==
 
@@ -25,7 +25,17 @@ Switch on/off WooCommerce 3.0+ Product Image Gallery options on a per product ba
 
 This plugin will only work with WooCommerce 3.0+
 
+== Screenshots ==
+
+1. The Product Image Gallery Options in action on the edit product screen in WooCommerce 3.0+.
+
 == Changelog ==
 
 = 1.0.0 - 04.10.2017 =
 Initial release.
+
+
+== Upgrade Notice ==
+
+= 1.0.0 =
+First version :) Please make sure you backup before upgrading to WooCommerce 3.0.0+
