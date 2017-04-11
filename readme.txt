@@ -15,7 +15,7 @@ Switch on/off WooCommerce 3.0+ Product Image Gallery options on a per product ba
 
 == Installation ==
 
-1. Upload `woocommerce-product-image-gallery-options` to the `/wp-content/plugins/` directory
+1. Upload `woo-product-image-gallery-options` to the `/wp-content/plugins/` directory
 2. Activate the plugin through the 'Plugins' menu in WordPress
 3. Done!
 
