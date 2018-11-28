@@ -10,7 +10,7 @@
  * Plugin Name:       WooCommerce Product Image Gallery Options
  * Plugin URI:        https://createandcode.com/plugins/woocommerce-product-image-gallery-options
  * Description:       Switch on/off WooCommerce 3.0+ Product Image Gallery options on a per product basis.
- * Version:           1.0.2
+ * Version:           1.1.0
  * Author:            Create and Code
  * Author URI:        https://createandcode.com
  * Requires at least: 4.7

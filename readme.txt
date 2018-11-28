@@ -2,7 +2,7 @@
 Contributors: createandcode
 Tags: woocommerce, gallery
 Requires at least: 4.7
-Tested up to: 4.8
+Tested up to: 5.0
 Stable tag: trunk
 License: GPLv2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
@@ -12,7 +12,7 @@ Switch on/off WooCommerce 3.0+ Product Image Gallery options on a per product ba
 == Description ==
 
 Switch on/off WooCommerce 3.0+ Product Image Gallery options on a per product basis. 
-(NOTE: Fully tested with WooCommerce 3.0 and 3.1). 
+(NOTE: Fully tested with WooCommerce 3.0, 3.1, 3.5). 
 
 WooCommerce 3.0+ added a series of new (awesome!) product image gallery options. But right now, these options are activated for all products. This plugin lets you show/hide the new WooCommerce Product Image Gallery options on individual products by adding 3 new check boxes to your Edit Product screen.
 
@@ -41,6 +41,12 @@ This plugin will only work with WooCommerce 3.0+
 
 == Changelog ==
 
+= 1.1.0 - 11.28.2017 =
+Fix - PHP 7.2 Support
+Fix - Updated CMB2
+WordPress 5.0+ Support
+WooCommerce 3.5+ Support
+
 = 1.0.2 - 07.25.2017 =
 Updated readme and version support details
 
@@ -49,8 +55,6 @@ Fixed some basic errors for admin notices when WooCommerce is not active
 
 = 1.0.0 - 04.10.2017 =
 Initial release.
-
-
 
 
 == Upgrade Notice ==
