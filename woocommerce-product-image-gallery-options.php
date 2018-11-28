@@ -10,7 +10,7 @@
  * Plugin Name:       WooCommerce Product Image Gallery Options
  * Plugin URI:        https://createandcode.com/plugins/woocommerce-product-image-gallery-options
  * Description:       Switch on/off WooCommerce 3.0+ Product Image Gallery options on a per product basis.
- * Version:           1.0.1
+ * Version:           1.0.2
  * Author:            Create and Code
  * Author URI:        https://createandcode.com
  * Requires at least: 4.7
@@ -52,6 +52,7 @@ if ( ! class_exists( 'WooCommerce_Product_Image_Gallery_Options' ) ) {
 
 		/**
 		 * Notices (array)
+		 *
 		 * @var array
 		 */
 		public $notices = array();
@@ -107,7 +108,7 @@ if ( ! class_exists( 'WooCommerce_Product_Image_Gallery_Options' ) ) {
 		static function get_environment_warning() {
 			if ( ! defined( 'WC_VERSION' ) ) {
 				return __( 'WooCommerce Product Image Gallery Options requires WooCommerce 3.0+ to be activated to work.', 'woocommerce-product-image-gallery-options' );
-			} 
+			}
 
 			if ( version_compare( WC_VERSION, WC_PIGO_MIN_WC_VER, '<' ) ) {
 				$message = __( 'WooCommerce Product Image Gallery Options - The minimum WooCommerce version required for this plugin is %1$s. You are running %2$s.', 'woocommerce-product-image-gallery-options', 'woocommerce-product-image-gallery-options' );
@@ -124,8 +125,12 @@ if ( ! class_exists( 'WooCommerce_Product_Image_Gallery_Options' ) ) {
 		public function admin_notices() {
 			foreach ( (array) $this->notices as $notice_key => $notice ) {
 				echo "<div class='" . esc_attr( $notice['class'] ) . "'><p>";
-				echo wp_kses( $notice['message'], array( 'a' => array( 'href' => array() ) ) );
-				echo "</p></div>";
+				echo wp_kses( $notice['message'], array(
+					'a' => array(
+						'href' => array(),
+					),
+				) );
+				echo '</p></div>';
 			}
 		}
 
@@ -135,7 +140,7 @@ if ( ! class_exists( 'WooCommerce_Product_Image_Gallery_Options' ) ) {
 		public function add_admin_notice( $slug, $class, $message ) {
 			$this->notices[ $slug ] = array(
 				'class'   => $class,
-				'message' => $message
+				'message' => $message,
 			);
 		}
 
@@ -172,4 +177,4 @@ if ( ! class_exists( 'WooCommerce_Product_Image_Gallery_Options' ) ) {
 	}
 
 	$WooCommerce_Product_Image_Gallery_Options = new WooCommerce_Product_Image_Gallery_Options();
-}
+}// End if().
